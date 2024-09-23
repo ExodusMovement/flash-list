@@ -80,7 +80,8 @@
     "!dist/benchmark/",
     "!dist/specs/",
     "!android/src/test/",
-    "!ios/Tests/"
+    "!ios/Tests/",
+    "!dist/tsconfig.tsbuildinfo"
   ],
   "dependencies": {
     "@exodus/recyclerlistview": "4.2.1",
