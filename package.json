@@ -81,7 +81,7 @@
     "jestSetup.js"
   ],
   "dependencies": {
-    "recyclerlistview": "4.2.1",
+    "@exodus/recyclerlistview": "4.2.1",
     "tslib": "2.6.3"
   },
   "codegenConfig": {
