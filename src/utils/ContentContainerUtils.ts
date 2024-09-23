@@ -1,5 +1,5 @@
 import { ViewStyle } from "react-native";
-import { Dimension } from "recyclerlistview";
+import { Dimension } from "@exodus/recyclerlistview";
 
 import { ContentStyle } from "../FlashListProps";
 

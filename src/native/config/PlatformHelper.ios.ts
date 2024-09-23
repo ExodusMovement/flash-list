@@ -1,4 +1,4 @@
-import { BaseItemAnimator } from "recyclerlistview";
+import { BaseItemAnimator } from "@exodus/recyclerlistview";
 
 const PlatformConfig = {
   defaultDrawDistance: 250,

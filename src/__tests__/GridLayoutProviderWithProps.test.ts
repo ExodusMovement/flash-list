@@ -1,5 +1,5 @@
 import { ScrollView } from "react-native";
-import { ProgressiveListView } from "recyclerlistview";
+import { ProgressiveListView } from "@exodus/recyclerlistview";
 
 import FlashList from "../FlashList";
 

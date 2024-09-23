@@ -14,8 +14,8 @@ import {
   RecyclerListView,
   RecyclerListViewProps,
   WindowCorrectionConfig,
-} from "recyclerlistview";
-import StickyContainer, { StickyContainerProps } from "recyclerlistview/sticky";
+} from "@exodus/recyclerlistview";
+import StickyContainer, { StickyContainerProps } from "@exodus/recyclerlistview/sticky";
 
 import AutoLayoutView from "./native/auto-layout/AutoLayoutView";
 import CellContainer from "./native/cell-container/CellContainer";

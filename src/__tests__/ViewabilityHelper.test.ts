@@ -1,4 +1,4 @@
-import { Dimension, Layout } from "recyclerlistview";
+import { Dimension, Layout } from "@exodus/recyclerlistview";
 
 import CustomError from "../errors/CustomError";
 import ExceptionList from "../errors/ExceptionList";
