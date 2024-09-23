@@ -77,8 +77,12 @@
     "ios",
     "dist",
     "RNFlashList.podspec",
-    "src",
     "jestSetup.js"
+    "!dist/__tests__/",
+    "!dist/benchmark/",
+    "!dist/specs/",
+    "!android/src/test/",
+    "!ios/Tests/"
   ],
   "dependencies": {
     "@exodus/recyclerlistview": "4.2.1",
