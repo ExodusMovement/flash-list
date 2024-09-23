@@ -77,7 +77,7 @@
     "ios",
     "dist",
     "RNFlashList.podspec",
-    "jestSetup.js"
+    "jestSetup.js",
     "!dist/__tests__/",
     "!dist/benchmark/",
     "!dist/specs/",
