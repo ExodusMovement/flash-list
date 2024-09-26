@@ -75,10 +75,8 @@
     "ios",
     "dist",
     "RNFlashList.podspec",
-    "jestSetup.js",
     "!dist/__tests__/",
     "!dist/benchmark/",
-    "!dist/specs/",
     "!android/src/test/",
     "!ios/Tests/",
     "!dist/tsconfig.tsbuildinfo"
