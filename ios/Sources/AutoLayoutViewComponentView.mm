@@ -38,11 +38,13 @@ using namespace facebook::react;
     _autoLayoutView.onBlankAreaEventHandler = ^(CGFloat start, CGFloat end) {
       AutoLayoutViewComponentView *strongSelf = weakSelf;
       if (strongSelf != nullptr && strongSelf->_eventEmitter != nullptr) {
-        std::dynamic_pointer_cast<const facebook::react::AutoLayoutViewEventEmitter>(strongSelf->_eventEmitter)
-          ->onBlankAreaEvent(facebook::react::AutoLayoutViewEventEmitter::OnBlankAreaEvent{
+        auto eventEmitter = std::dynamic_pointer_cast<const facebook::react::AutoLayoutViewEventEmitter>(strongSelf->_eventEmitter);
+        if(eventEmitter) {
+          eventEmitter->onBlankAreaEvent(facebook::react::AutoLayoutViewEventEmitter::OnBlankAreaEvent{
             .offsetStart = (int) floor(start),
             .offsetEnd = (int) floor(end),
-        });
+          });
+        }
       }
     };
   }
@@ -69,7 +71,14 @@ using namespace facebook::react;
 
 - (void)updateProps:(const Props::Shared &)props oldProps:(const Props::Shared &)oldProps
 {
-    const auto &newProps = *std::static_pointer_cast<const AutoLayoutViewProps>(props);
+
+    const auto castedNewPropsPtr = std::static_pointer_cast<const AutoLayoutViewProps>(props);
+    
+    if (!castedNewPropsPtr) {
+      return;
+    }
+
+    const auto &newProps = *castedNewPropsPtr;
 
     [_autoLayoutView setHorizontal:newProps.horizontal];
     [_autoLayoutView setScrollOffset:newProps.scrollOffset];

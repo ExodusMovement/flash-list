@@ -44,11 +44,16 @@ using namespace facebook::react;
 
 - (void)updateProps:(const Props::Shared &)props oldProps:(const Props::Shared &)oldProps
 {
-    const auto &newProps = *std::static_pointer_cast<const CellContainerProps>(props);
+    auto newPropsPtr = std::static_pointer_cast<const CellContainerProps>(props);
 
-    self.index = newProps.index;
+    if (newPropsPtr) {
+        const auto &newProps = *newPropsPtr;
 
-    [super updateProps:props oldProps:oldProps];
+        self.index = newProps.index;
+
+        [super updateProps:props oldProps:oldProps];
+    }
+
 }
 @end
 
