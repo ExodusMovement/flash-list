@@ -12,7 +12,7 @@ const getCellContainerPlatformStyles = (
   inverted: boolean,
   parentProps: { x: number; y: number; isHorizontal?: boolean }
 ): { transform: string; WebkitTransform: string } | undefined => {
-  const transformValue = `translate(${parentProps.x}px,${parentProps.y}px)${
+  const transformValue = `translate(${parseInt(parentProps.x.toString())}px,${parseInt(parentProps.y.toString())}px)${
     inverted ? ` ${parentProps.isHorizontal ? `scaleX` : `scaleY`}(-1)` : ``
   }`;
   return { transform: transformValue, WebkitTransform: transformValue };
