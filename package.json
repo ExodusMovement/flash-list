@@ -24,27 +24,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "up": "bundle install && yarn fixture:rn:up && yarn e2e:up && yarn build",
-    "start": "cd fixture/react-native && react-native start",
-    "test": "jest",
-    "lint": "yarn eslint . --ext .ts,.tsx",
-    "lint:fix": "yarn eslint . --ext .ts,.tsx --fix",
-    "type-check": "yarn tsc --pretty --noEmit",
     "clean": "rm -rf dist/",
-    "build": "yarn clean && tsc -b",
-    "fixture:rn:up": "cd fixture/react-native && yarn && cd ios && bundle exec pod install && cd ../../../",
-    "fixture:expo:up": "cd fixture/expo && yarn && cd ../../",
-    "fixture:rn:android": "cd fixture/react-native && yarn react-native run-android && yarn build --watch",
-    "fixture:rn:ios": "cd fixture/react-native && yarn react-native run-ios && yarn build --watch",
-    "ra": "yarn fixture:rn:android",
-    "ri": "yarn fixture:rn:ios",
-    "fixture:expo:start": "cd fixture/expo && yarn start",
-    "rw": "yarn fixture:expo:start",
-    "e2e:up": "cd fixture/react-native/ios && brew tap wix/brew && brew install applesimutils && cd ../../../",
-    "e2e:ios": "cd fixture/react-native && yarn e2e:build:ios && yarn e2e:test:ios",
-    "rei": "yarn run-e2e-ios",
-    "e2e:android": "cd fixture/react-native && yarn e2e:build:android && yarn e2e:test:android",
-    "rea": "yarn run-e2e-android"
+    "build": "yarn clean && tsc -b"
   },
   "peerDependencies": {
     "@babel/runtime": "*",
