@@ -1126,14 +1126,13 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@exodus/recyclerlistview@^4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@exodus/recyclerlistview/-/recyclerlistview-4.2.1.tgz#6a1a143cea2741cfb8fc1662c5877e0c9f0a3809"
-  integrity sha512-Xct5VxQxEKoU5aivhuJmGsRFtvHT/9WP/GN53w7gxg53HwMmkF3wLuqYilhDGp4bBTvvZhFB8IyWSoFyJs9c9g==
+"@exodus/recyclerlistview@^4.2.4":
+  version "4.2.4"
+  resolved "https://registry.yarnpkg.com/@exodus/recyclerlistview/-/recyclerlistview-4.2.4.tgz#916cc3c3160508af7cb3985f49485ebd78cb4862"
+  integrity sha512-hjnpTla18UMuMAWjqNUTrCqxX0NnxE8QsGz0DUS8SgMd2KdkGlTdtLi3VuLiAT5d4/qmP7OmRyJZ17UWzOShhg==
   dependencies:
     lodash.debounce "4.0.8"
     prop-types "15.8.1"
-    ts-object-utils "0.0.5"
 
 "@graphql-tools/batch-execute@^7.1.2":
   version "7.1.2"
@@ -7091,11 +7090,6 @@ ts-node@^9:
     make-error "^1.1.1"
     source-map-support "^0.5.17"
     yn "3.1.1"
-
-ts-object-utils@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/ts-object-utils/-/ts-object-utils-0.0.5.tgz#95361cdecd7e52167cfc5e634c76345e90a26077"
-  integrity sha1-lTYc3s1+UhZ8/F5jTHY0XpCiYHc=
 
 tsconfig-paths@^3.12.0:
   version "3.14.0"
