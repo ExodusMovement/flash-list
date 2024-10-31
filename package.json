@@ -18,7 +18,7 @@
     "url": "https://github.com/ExodusMovement/flash-list/tree/exodus-1.7.1"
   },
   "description": "FlashList is a more performant FlatList replacement",
-  "author": "shopify",
+  "author": "Exodus Movement, Inc.",
   "license": "MIT",
   "homepage": "https://github.com/ExodusMovement/flash-list/tree/exodus-1.7.1/",
   "main": "dist/index.js",
